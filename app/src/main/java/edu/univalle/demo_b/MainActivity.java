@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         itemMovie4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setVideo("http://clips.vorwaerts-gmbh.de/VfE_html5.mp4", "Infinity War");
+                setVideo("https://stream76.uqload.com/3rfkq2z5ejw2q4drdjw7hm5olvvqy37te6cu3rwn6esbv7zi4chiwtomi65a/v.mp4", "Infinity War");
             }
         });
         // TODO: Completar para la informacion (Imagen, titulo, subtitulo) de Series y Comics
