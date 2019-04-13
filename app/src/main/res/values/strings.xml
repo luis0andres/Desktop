@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DemoB</string>
+    <string name="movies">Movies</string>
+    <string name="series">Series</string>
+    <string name="comics">Comics</string>
+    <string name="video_title">Video title</string>
+</resources>

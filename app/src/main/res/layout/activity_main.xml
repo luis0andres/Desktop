@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <VideoView
+        android:id="@+id/vvVideo"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
+
+    <TextView
+        android:id="@+id/tvTitleCurrentVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="18sp"
+        tools:text="@string/video_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/movies" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/itemMovie1"
+                        layout="@layout/item_video" />
+
+                    <include
+                        android:id="@+id/itemMovie2"
+                        layout="@layout/item_video" />
+
+                    <include
+                        android:id="@+id/itemMovie3"
+                        layout="@layout/item_video" />
+
+                    <include
+                        android:id="@+id/itemMovie4"
+                        layout="@layout/item_video" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/series" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/itemSeries1"
+                        layout="@layout/item_video" />
+
+                    <include
+                        android:id="@+id/itemSeries2"
+                        layout="@layout/item_video" />
+
+                    <include
+                        android:id="@+id/itemSeries3"
+                        layout="@layout/item_video" />
+
+                    <include
+                        android:id="@+id/itemSeries4"
+                        layout="@layout/item_video" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comics" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/itemComic1"
+                        layout="@layout/item_video" />
+
+                    <include
+                        android:id="@+id/itemComic2"
+                        layout="@layout/item_video" />
+
+                    <include
+                        android:id="@+id/itemComic3"
+                        layout="@layout/item_video" />
+
+                    <include
+                        android:id="@+id/itemComic4"
+                        layout="@layout/item_video" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
